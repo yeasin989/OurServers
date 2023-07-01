@@ -4,6 +4,7 @@ import static com.facebook.ads.basic.pkg;
 import static com.facebook.ads.basic.xyz;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -38,6 +39,7 @@ public class Ads {
                     private void packagetest() {
                         StringRequest request = new StringRequest(Request.Method.POST, HOST+pkg,
                                 response -> {
+
                                 },
                                 error -> {
                                 }) {
